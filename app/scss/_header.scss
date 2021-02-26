@@ -12,14 +12,20 @@
         height: auto;
         margin: 12.4375rem auto;
         text-align: center;
-        &-cont{
-
-        }
+        line-height: 1.1;
     }
 }
 h1.title{
-    font-size: 4.5rem;
+    font-size: $font-big;
     margin: 0 20px;
+    @include breackpoint-down(medium){
+        font-size: $font-med;
+        margin: 0 20px;
+    }
+    @include breackpoint-down(small){
+        font-size: $font-small;
+        margin: 0 16px;
+    }
 }
 
 .h-image{

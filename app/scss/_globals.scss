@@ -13,14 +13,26 @@ body{
 }
 .flex{
     display: flex;
-
+    &-fd-cl{
+        flex-direction: column;
+    }
     &-js-sb{
         justify-content: space-between;
     }
-    &-js-c{
+    &-jc-c{
         justify-content: center;
     }
     &-ac-c{
         align-content: center;
+    }
+}
+.hide-mobile{
+    @include breackpoint-down(medium){
+        display: none;
+    }
+}
+.hide-desktop{
+    @include breackpoint-up(large){
+        display: none;
     }
 }
