@@ -1,0 +1,68 @@
+.sec2{
+    background-color: $yellow;
+    &-u1{
+        margin: 0 auto;
+        @include breackpoint-up(xlarge){
+            min-height: 20.1875rem;
+            width: 71.25rem;
+        }
+        @include breackpoint-down(xlarge){
+            min-height: 20.1875rem;
+            width: 71.25rem;
+        }
+        @include breackpoint-up(large){
+            min-height: 20.1875rem;
+            width: 58.75rem;
+        }
+        @include breackpoint-up(medium){
+            min-height: 20.1875rem;
+            width: 45rem;
+        }
+        @include breackpoint-up(small){
+            min-height: 91.0625rem;
+            width: 33.75rem;
+        }
+        @include breackpoint-down(large){
+            min-height: 20.1875rem;
+            width: 58.75rem;
+        }
+        @include breackpoint-down(medium){
+            min-height: 20.1875rem;
+            width: 45rem;
+        }
+        @include breackpoint-down(small){
+            min-height: 91.0625rem;
+            width: 33.75rem;
+        }
+        
+    }
+    
+}
+.sec2-u2{
+    @include breackpoint-up(xlarge){
+        margin: -13.6875rem auto 0 0
+    }
+    @include breackpoint-up(large){
+        margin: -13.6875rem auto 0 0
+    }
+    @include breackpoint-up(medium){
+        margin: -13.6875rem auto 0 0
+    }
+    @include breackpoint-up(small){
+        margin: -17.4375rem auto 0 0;
+    }
+    @include breackpoint-down(xlarge){
+        margin: -13.6875rem auto 0 0
+    }
+    @include breackpoint-down(large){
+        margin: -13.6875rem auto 0 0
+    }
+    @include breackpoint-down(medium){
+        margin: -13.6875rem auto 0 0
+    }
+    @include breackpoint-down(small){
+        margin: -17.4375rem auto 0 0;
+    }
+    
+
+}

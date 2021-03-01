@@ -1,0 +1,63 @@
+.lay-ro{
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100%;
+    min-width: 100%;
+    flex: 1 1 100%;
+}
+.lay-div{
+    flex: 0 0 50%;
+    min-width: 50%;
+    max-height: 100%;
+    min-height: fit-content;
+}
+.lay-col{
+    flex-direction: column;
+    min-height: 100%;
+    flex: 1 1 100%;
+}
+.lay-cell-1{
+    position: relative;
+    //display: flex;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    &-transparent{
+        background-color: transparent !important;
+        opacity: 1;
+    }
+    &-first{
+        min-height: 13.625em;
+    }
+}
+.lay-cell-1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.cell-container{
+    padding: auto 0;
+    position: relative;
+    flex : 1;
+    max-width: 100%;
+}
+.cell-title{
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 14px;
+    &-font{
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 1.1;
+        
+    }
+}
+.cell-parag{
+    margin-top: 9px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
